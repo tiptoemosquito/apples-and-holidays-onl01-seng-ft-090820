@@ -50,7 +50,7 @@ end
 def all_winter_holiday_supplies(holiday_hash)
   puts holiday_hash
   puts value[:winter]
-  puts value[:holiday_supplies]
+
 
 end
   # return an array of all of the supplies that are used in the winter seaso
