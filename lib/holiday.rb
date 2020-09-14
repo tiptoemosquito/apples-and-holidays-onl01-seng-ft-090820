@@ -42,7 +42,9 @@ def add_supply_to_memorial_day(holiday_hash, supply)
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
+  holiday_supplies[season][new_holiday_name] = holiday_supplies
 
+  holiday_supplies
 
 
   # code here
@@ -74,7 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def all_holidays_with_bbq(holiday_hash)
-  supplies_hash.map do |season, holidays|
+  holiday_supplies.map do |season, holidays|
     holidays.map do |holiday, supplies|
       holiday if supplies.include?("BBQ")
     end
